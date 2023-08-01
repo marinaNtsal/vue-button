@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button :style="customStyle">
+    <button class="test-reusable-btn" :style="customStyle">
       {{ text }}
     </button>
   </div>
