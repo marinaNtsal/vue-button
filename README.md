@@ -1,24 +1,33 @@
-# vue-button
+# test-reusable-button
 
 ## Project setup
 ```
-npm install
+npm install --save test-reusable-button
+```
+or
+```
+yarn add test-reusable-button
 ```
 
-### Compiles and hot-reloads for development
+## Basic Usage
 ```
-npm run serve
-```
+<template>
+  <test-reusable-btn
+    :customStyle="{
+        color: 'gray',
+        fontSize: '2rem',
+        padding: '1rem 2rem',
+        borderRadius: '1rem',
+      }"
+  />
+</template>
+<script>
+import TestReusableButton from "test-reusable-button";
 
-### Compiles and minifies for production
+export default {
+  components:{
+    TestReusableButton
+  }
+}
+</script>
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

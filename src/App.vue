@@ -1,17 +1,29 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <reusable-btn
+      :customStyle="btnStyle"
+      :text="'save'"
+    />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ReusableBtn from "./components/test-reusable-btn.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    ReusableBtn,
+  },
+  computed: {
+    btnStyle() {
+      return {
+        color: "gray",
+        fontSize: "2rem",
+        padding: "1rem 2rem",
+        borderRadius: "1rem",
+      };
+    },
   },
 };
 </script>
