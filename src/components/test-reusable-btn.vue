@@ -19,6 +19,7 @@ export default {
         fontSize: "2rem",
         padding: "1rem 2rem",
         borderRadius: "1rem",
+        background: "blue"
       }),
     },
   },
