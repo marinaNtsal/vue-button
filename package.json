@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-library": "vue-cli-service build --target lib --name test-reusable-button ./src/install.js"
+    "build-library": "vue-cli-service build --target lib --name test-reusable-button ./src/install.js",
+    "publish-package": "npm run build-library && npm version patch -m \"build: release %s\" && npm publish --access public"
   },
   "main": "./dist/test-reusable-button.common.js",
   "files": [
