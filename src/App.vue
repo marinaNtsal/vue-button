@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <reusable-btn
-      :customStyle="btnStyle"
       :text="'save'"
     />
   </div>

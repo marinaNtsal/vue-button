@@ -15,11 +15,11 @@ export default {
     },
     customStyle: {
       default: () => ({
-        color: "gray",
+        color: "black",
         fontSize: "2rem",
         padding: "1rem 2rem",
         borderRadius: "1rem",
-        background: "blue"
+        backgroundColor: "rgb(76, 184, 251)"
       }),
     },
   },
